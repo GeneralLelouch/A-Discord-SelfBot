@@ -3,10 +3,16 @@ const client = new Discord.Client();
 const config = require('./config.json');
 const prefix = config.prefix;
 const fs = require('fs');
-const moment = require('moment');
+const moment = requier('moment');
 require('./util/eventLoader')(client);
 
 client.login(process.env.TOKEN);
+
+client.elevation = message => {
+  let permlvl = 0;
+  if (message.author.id === config.id) permlvl = 4;
+  return permlvl;
+};
 
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
