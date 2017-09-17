@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const config = require('./config.json');
 const prefix = config.prefix;
 const fs = require('fs');
-const moment = requier('moment');
+const moment = requie('moment');
 require('./util/eventLoader')(client);
 
 client.login(process.env.TOKEN);
