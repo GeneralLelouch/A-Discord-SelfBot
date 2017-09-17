@@ -9,7 +9,7 @@
 
 [<img src="https://img.shields.io/packagist/l/doctrine/orm.svg">](https://github.com/TherealPOKEGAMER/A-Discord-SelfBot/blob/master/LICENSE) [![Build Status](https://travis-ci.org/appu1232/Discord-Selfbot.svg?branch=master)](https://travis-ci.org/appu1232/Discord-Selfbot)
 
-Come join the dedicated server for this bot! Ask questions, give suggestions, get help, or just hang out. Also see what else I'm upto next: https://discord.gg/dwbPTds
+Come join the dedicated server for this bot! Ask questions, give suggestions, get help, or just hang out. Also see what else I'm upto next: https://discord.gg/(i'll update it later owo)
 [<img src="https://canary.discordapp.com/api/guilds/353431764657635328/widget.png?style=banner2">](https://discord.gg/dwbPTds)
 
 # Before Setup
