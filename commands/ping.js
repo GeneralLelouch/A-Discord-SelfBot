@@ -6,7 +6,7 @@ exports.run = (client, msg, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['pong'],
   permLevel: 0
 };
 
