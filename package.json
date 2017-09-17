@@ -1,0 +1,16 @@
+{
+  "name": "selfbot",
+  "version": "0.0.1",
+  "description": "A Discord Selfbot",
+  "main": "selfbot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@Marshadow/POKEGAMER#5095",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "fs": "0.0.1-security",
+    "moment": "^2.18.1"
+  }
+}

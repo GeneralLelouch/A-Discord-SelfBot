@@ -1,10 +1,17 @@
-exports.run = (client, message, args) => {
-  message.delete();
-  message.channel.send("Ping???").then(m => m.edit(`Pong!, I am alive dude, \n**TIME TAKEN**: ${m.createdTimestamp - message.createdTimestamp}***ms***. \n**API Latency**: ${Math.round(client.ping)}***ms***`))
+exports.run = (client, msg, args) => {
+  msg.delete();
+  msg.channel.send(":ping_pong:").then(m => m.edit(`:ping_pong: | Pong! Latency is ${m.createdTimestamp - msg.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`) );
+};
+
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: [],
+  permLevel: 0
 };
 
 exports.help = {
   name: 'ping',
-  description: 'beep beep, I wonder What this Does, beep beep',
+  description: 'It... like... pings. Then Pongs. And it\'s not Ping Pong.',
   usage: 'ping'
 };
