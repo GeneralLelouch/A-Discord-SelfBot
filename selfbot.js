@@ -8,10 +8,6 @@ require('./util/eventLoader')(client);
 
 client.login(process.env.TOKEN);
 
-const log = message => {
-  console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${message}`);
-};
-
 client.elevation = message => {
   let permlvl = 0;
   if (message.author.id === config.id) permlvl = 4;

@@ -13,5 +13,5 @@ exports.conf = {
 exports.help = {
   name: 'setstream',
   description: 'Set\'s your game name as a stream',
-  usage: 'setstream [text]'
+  usage: 'setstream [stream name]'
 };

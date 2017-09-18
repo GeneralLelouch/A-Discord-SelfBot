@@ -13,5 +13,5 @@ exports.conf = {
 exports.help = {
   name: 'setgame',
   description: 'Set\'s your gaming status',
-  usage: 'setgame [text]'
+  usage: 'setgame [game name]'
 };

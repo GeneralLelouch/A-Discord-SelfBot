@@ -13,5 +13,5 @@ exports.conf = {
 exports.help = {
   name: 'setname',
   description: 'Set\'s your username',
-  usage: 'setname [text]'
+  usage: 'setname [name]'
 };

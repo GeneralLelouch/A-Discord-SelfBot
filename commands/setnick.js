@@ -13,5 +13,5 @@ exports.conf = {
 exports.help = {
   name: 'setnick',
   description: 'Set\'s your nickname in the server [Note: Must have Change Nickname perms]',
-  usage: 'setnick [text]'
+  usage: 'setnick [nickname]'
 };
