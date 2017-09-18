@@ -3,7 +3,6 @@ const moment = require('moment');
 const info = require('../util/info.json')
 
 exports.run = (client, message, args) => {
-  const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
   const author = info.author;
   const version = info.version;
   const user = message.author;
@@ -15,7 +14,6 @@ exports.run = (client, message, args) => {
   .setThumbnail(`${user.avatarURL}`)
   .setTimestamp()
   .addField('**Author**', `${author}`)
-  .addField('**Uptime**', `${duration}`)
   .addField('**Memory Usage**', `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`)
   .addField('**User\'s**', `${client.users.size.toLocaleString()}`)
   .addField('**Server\'s**', `${client.guild.size.toLocaleString()}`)
