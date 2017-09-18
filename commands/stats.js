@@ -7,7 +7,7 @@ exports.run = (client, message, args) => {
   const version = info.version;
   const user = message.author;
   const embed = new Discord.RichEmbed()
-  .setTile('Some Useful Bot Statistics')
+  .setTitle('Some Useful Bot Statistics')
   .setAuthor(`${user.username} ${version}`, `${user.avatarURL}`)
   .setColor([255, 165, 0])
   .setFooter(`A Simple Discord Selfbot Written in Discord.js`)
