@@ -15,7 +15,6 @@ exports.run = (client, message, args) => {
   .setTimestamp()
   .addField('**Author**', `${author}`)
   .addField('**Memory Usage**', `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`)
-  .addField('**Server\'s, Channel\'s, User\'s**', `${client.guild.size} Server\'s\n${client.channels.size} Channel\'s\n${client.users.size} User\'s`)
   .addField('**Discord.js**', `v${Discord.version}`)
   .addField('**Node Version**', `${process.version}`)
   .addField('**Source Code**', `**[Click Here](https://github.com/TherealPOKEGAMER/A-Discord-SelfBot) to get to the github link**`)
