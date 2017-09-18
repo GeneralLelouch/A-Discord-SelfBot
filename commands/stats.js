@@ -1,13 +1,11 @@
 const Discord = require('discord.js');
 const moment = require('moment');
 const info = require('../util/info.json');
-require("moment-duration-format");
 
 exports.run = (client, message, args) => {
   const author = info.author;
   const version = info.version;
   const user = message.author;
-  const duration = moment.duration(client.uptime).format(" D [days], H [hrs], M [mins], S [secs]");
   const embed = new Discord.RichEmbed()
   .setTitle('Some Useful Bot Statistics')
   .setAuthor(`${user.username} ${version}`, `${user.avatarURL}`)
@@ -17,7 +15,6 @@ exports.run = (client, message, args) => {
   .setTimestamp()
   .addField('**Author**', `${author}`)
   .addField('**Memory Usage**', `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`)
-  .addField('**Uptime**', `${duration}`)
   .addField('**Server\'s, Channel\'s, User\'s**', `${client.guild.size} Server\'s\n${client.channels.size} Channel\'s\n${client.users.size} User\'s`)
   .addField('**Discord.js**', `v${Discord.version}`)
   .addField('**Node Version**', `${process.version}`)
