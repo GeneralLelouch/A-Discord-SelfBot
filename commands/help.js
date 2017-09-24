@@ -31,7 +31,7 @@ exports.run = (client, message, params) => {
       .setDescription(`\`${settings.prefix}${command.help.name} ${command.help.alias}\`\n${command.help.description}\n**${command.help.permit}**`)
       .addField(`Usage`, `\`${settings.prefix}${command.help.usage}\``)
       .setFooter(`Module: ${command.help.module}`)
-      message.channel.send({embed; cmdhelp});
+      message.channel.send({embed: cmdhelp});
     }
   }
 };
