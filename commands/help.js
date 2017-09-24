@@ -17,10 +17,6 @@ exports.run = (client, message, params) => {
       .addField("Help", `\`\`\`${client.commands.filter(c=>c.help.module === "Help").map(cmd=>`${config.prefix}${cmd.help.name}${' '.repeat(longest - cmd.help.name.length)} :: ${cmd.help.description}`).join("\n")}\n\`\`\``)
       .addField("Utility", `\`\`\`${client.commands.filter(c=>c.help.module === "Other").map(cmd=>`${config.prefix}${cmd.help.name}${' '.repeat(longest - cmd.help.name.length)} :: ${cmd.help.description}`).join("\n")}\n\`\`\``)
       message.channel.send({embed});
-      message.author.send({embed: {
-        color: 663399
-        description: `Type ${config.prefix}help <commandname> for detail\'s about the commands.`
-      }});
     } else {
       let command = args[0];
       if (client.commands.has(command)) {
