@@ -15,7 +15,7 @@ exports.run = (client, message, args) => {
   .setTimestamp()
   .addField('**Author**', `${author}`)
   .addField('**Memory Usage**', `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`)
-  .addField('**Discord.js**', `v${Discord.version}`)
+  .addField('**Discord.js**', `V${Discord.version}`)
   .addField('**Node Version**', `${process.version}`)
   .addField('**Source Code**', `**[Click Here](https://github.com/TherealPOKEGAMER/A-Discord-SelfBot) to get to the github link**`)
 
@@ -32,5 +32,6 @@ exports.conf = {
 exports.help = {
   name: 'stats',
   description: 'Gives some info on the selfbot',
-  usage: 'stats'
+  usage: 'stats',
+  module: 'Utility'
 };

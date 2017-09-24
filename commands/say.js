@@ -19,5 +19,6 @@ exports.conf = {
 exports.help = {
   name: 'say',
   description: 'Say\'s something in embed',
-  usage: 'say [text]'
+  usage: 'say [text]',
+  module: 'Fun'
 };

@@ -13,5 +13,6 @@ exports.conf = {
 exports.help = {
   name: 'setstatus',
   description: 'Set\'s your user status',
-  usage: 'setstatus [online/idle/dnd/invinsible]'
+  usage: 'setstatus [online/idle/dnd/invinsible]',
+  module: 'Utility'
 };

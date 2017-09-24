@@ -13,5 +13,6 @@ exports.conf = {
 exports.help = {
   name: 'ping',
   description: 'It... like... pings. Then Pongs. And it\'s not Ping Pong.',
-  usage: 'ping'
+  usage: 'ping',
+  module: 'Utility'
 };

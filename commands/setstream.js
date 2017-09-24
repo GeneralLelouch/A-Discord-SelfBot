@@ -13,5 +13,6 @@ exports.conf = {
 exports.help = {
   name: 'setstream',
   description: 'Set\'s your game name as a stream',
-  usage: 'setstream [stream name]'
+  usage: 'setstream [stream name]',
+  module: 'Utility'
 };
